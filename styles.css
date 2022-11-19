@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #202124;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 26px;
+}
+
+.header-elements-left, 
+.header-elements-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-elements-right {
+    margin-left: 50px;
+}
+
+.header-container a {
+    color: #202124;
+    text-decoration: none;
+}
+
+.header-container a:hover {
+    color: #202124;
+    text-decoration: underline;
+}
+
+#google-apps-icon {
+    position: relative;
+    margin-left: 8px;
+}
+
+#google-apps-icon .overlay {
+    position: absolute;
+    background-color: lightgrey;
+    border: none;
+    right: -5px;
+    bottom: -2px;
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;
+    opacity: 0;
+}
+
+#google-apps-icon .overlay:hover {
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+#sign-in {
+    background-color: #1a73e8;
+    padding: 9px 30px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-left: 8px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.15s, box-shadow 0.15s;
+}
+
+#sign-in > a {
+    color: white;
+    text-decoration: none;
+}
+
+#sign-in:hover {
+    background-color: #1b66c9;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 120px;
+    height: 33vh;
+}
+
+.search-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar > input{
+    position: relative;
+    width: 450px;
+    height: 35px;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    padding: 6px 50px;
+    font-size: 16px;
+}
+
+.search-bar > input:hover,
+.search-bar > input:focus {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid transparent;
+    outline: none;
+}
+
+#search-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+#voice-search-icon {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.voice-search-container > .tooltip {
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    padding: 6px 8px;
+    background-color: #202124;
+    border: 1px solid white;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+    right: -20px;
+    bottom: -32px;
+    pointer-events: none;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.voice-search-container:hover > .tooltip {
+    opacity: 1;  
+}
+
+.search-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+}
+
+#google-search-button,
+#lucky-search-button {
+    background-color: #F8F9FA;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 22px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: border 0.15s, box-shadow 0.15s;
+}
+
+#google-search-button:hover,
+#lucky-search-button:hover {
+    border: 1px solid lightgrey;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1)
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #70757A;
+    background-color: #f2f2f2;
+    cursor: pointer; 
+}
+
+footer a {
+    text-decoration: none;
+    color: #70757A;
+}
+
+@media (max-height: 520px) {
+    footer {
+        position: static;
+    }
+}
+
+.footer-top-row{
+    font-size: 15px;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.footer-bottom-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.footer-bottom-row > .footer-left,
+.footer-bottom-row > .footer-right {
+    display: flex;
+    gap: 20px;
+}
+
+footer a:hover, 
+.settings-menu:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .footer-bottom-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

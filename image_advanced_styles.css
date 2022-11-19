@@ -1,0 +1,126 @@
+/* Additional styles for image.html */
+
+.header-container {
+    margin-top: 8px;
+}
+
+#google-logo {
+    position: relative;
+}
+
+#images-subtext {
+    position: absolute;
+    font-size: 16px;
+    color: #4285f4;
+    right: 4px;
+    top: 75px;
+}
+
+.search-bar-container {
+    margin-bottom: 100px;
+}
+
+#search-images-button {
+    position: absolute;
+    right: 12px;
+    bottom: 9px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border: none;
+    box-shadow: none;
+}
+
+#voice-search-icon {
+    right: 60px;
+}
+
+.voice-search-container > .tooltip {
+    right: 16px;
+    bottom: -32px;
+}
+
+/* Additional styles for advanced.html */
+
+.adv-search-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+#adv-search-title {
+    color: #d93025;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
+}
+
+#adv-search-subtitle {
+    color: #333333;
+    font-size: 16px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.adv-search-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 50px;
+}
+
+.adv-search-parameter {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 180px 1fr 50px;
+}
+
+@media(min-width: 900px) {
+    .adv-search-parameter {
+        grid-template-columns: 180px 620px 1fr;
+    }
+}
+
+.adv-search-parameter > label {
+    color: #222222;
+    font-size: 13px;
+}
+
+.adv-search-parameter > input {
+    height: 25px;
+    padding-left: 10px;
+    border: 1px solid lightgrey;
+}
+
+.adv-search-parameter > input:focus {
+    border-color: #4285f4;
+    outline: none;
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.3)
+}
+
+.adv-search-button-column {
+    display: flex;
+    justify-content: right;
+    padding-top: 10px;
+}
+
+#advanced-search-button {
+    background-color: #4d90fe;
+    color: white;
+    width: 120px;
+    height: 30px;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: 1px solid #3079ed;
+    border-radius: 2px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#advanced-search-button:hover {
+    border: 1px solid #2259b3;
+    background-image: radial-gradient(#3079ed 75%, rgba(43,109,216, 0.5) 25%)
+}
