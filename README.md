@@ -4,7 +4,7 @@ A front-end clone for Google Search, Google Image Search, and Google Advanced Se
 
 ▶️ See [video preview](https://www.youtube.com/watch?v=YpAVHIQnrfw).
 
-📝 See [project specifications](https://cs50.harvard.edu/web/2020/projects/0/search/)
+📝 See [project specifications](https://cs50.harvard.edu/web/2020/projects/0/search/).
 
 ## Google Search Page Preview
 ![index screenshot](https://user-images.githubusercontent.com/110285021/209433730-48ac4775-d94b-4751-b396-80e8e992bd97.png)
